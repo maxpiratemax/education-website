@@ -9,17 +9,17 @@
 }
 
 :root {
-    --color-primary: #6c63ff;
-    --color-success: #00bf8e;
-    --color-warning: #f7c94b;
-    --color-danger: #f75842;
+    --color-primary: #462446;
+    --color-success: #8BC34A;
+    --color-warning: #FFEB3B;
+    --color-danger: #47B39D;
     --color-danger-variant: rgba(247, 88, 66, 0.4);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.7);
-    --color-black: #000;
-    --color-bg: #1f2641;
-    --color-bg1: #2e3267;
-    --color-bg2: #424890;
+    --color-black: #212121;
+    --color-bg: #B05F6D;
+    --color-bg1: #FFC153;
+    --color-bg2: #EB6B56;
 
     --container-width-lg: 80%;
     --container-width-md: 90%;
@@ -258,6 +258,8 @@ header {
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
 }
 
 .course:hover {
@@ -267,6 +269,10 @@ header {
 
 .course__info {
     padding: 2rem;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .course__info p {
@@ -551,9 +557,9 @@ header {
     }
 
     /* Popular courses */
-    .courses {
+    /* .courses {
         margin-top: 0;
-    }
+    } */
 
     .courses__container {
         grid-template-columns: 1fr 1fr;
